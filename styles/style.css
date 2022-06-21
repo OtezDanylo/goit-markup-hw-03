@@ -1,7 +1,6 @@
   :root{
 --background-button-color:#2196F3;
 --p-color:#757575;
---bold-letters:#212121;
 --background-color: #7c6262;
 --underheader: #2F303A;
 --white:#FFFFFF;
@@ -11,11 +10,13 @@
 --yes:#ECECEC;
 --black:#000000;
 --footer-background:#2F303A;
+--border:#EEEEEE;
   }
   
   body {
     font-family:'Roboto', sans-serif ;
     background-color: var(--white);
+    color: var(--twentyone);
     font-size: 14px;
     letter-spacing: 0.03em;
  } 
@@ -30,7 +31,22 @@ img {
   height: auto;
 }
 
-section { 
+address {
+font-style: normal;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section { 
  padding-bottom: 94px;
 padding-top: 94px;
 }
@@ -55,11 +71,10 @@ align-items: center;
 
 .underheader {
       background-color: var(--underheader);
-      width: 1600px;
-      height: 600px;
-        display: flex;
-        align-items: center;
-      }
+      text-align: center;
+      padding: 200px 0;
+      
+        }
    
  
 .header-list {
@@ -80,18 +95,14 @@ align-items: center;
   margin-right: 50px;
 }
 
-
-
  .contacts {
   display: block;
-  padding-top: 32px;
-    padding-bottom: 31px;
    text-decoration: none;
  font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 1.7;
+line-height: 1.71;
 letter-spacing: 0.02em;
 
 color: var(--p-color);
@@ -99,12 +110,9 @@ color: var(--p-color);
 
 .contacts-footer {
   display: block;
-  text-decoration: none;
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.7;
+   font-weight: 500;
+    line-height: 1.71;
   letter-spacing: 0.02em;
 
   color: var(--p-color);
@@ -121,17 +129,16 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
  width: 696px;
-  height: 120px;
-  
+  margin:0 auto;
+  margin-bottom: 30px;
   color: var(--white);
  }
 
-.container-heading {
-  display: flex;
-  flex-direction: column;
-    align-items: center;
-   
+
+   .uppercase-why {
+    margin-bottom: 10px;
    }
+
 
  .uppercase {
    text-transform: uppercase;
@@ -152,6 +159,10 @@ color: var(--background-button-color);
   color: var(--background-button-color);
 }
 
+.section-doing {
+  padding-top: 0;
+}
+
  .Names {
    
         font-family: 'Roboto';
@@ -161,7 +172,7 @@ color: var(--background-button-color);
         line-height: 2;
         letter-spacing: 0.06em;
     margin-bottom: 4px;
-
+padding-top:20px;
         color: var(--bold-letters);
  }
 
@@ -175,14 +186,22 @@ color: var(--background-button-color);
         text-align: center;
     letter-spacing: 0.03em;
   background-color: var(--colorf5f4);
-    color: var(--twentyone)
+    color: var(--twentyone);
     width: auto;
+      border:none;
+    border-radius: 4px;
+padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+
  }
 
 .filter:hover,
 .filter:focus {
    background-color: var(--background-button-color);
    color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
  .filter{
@@ -202,8 +221,7 @@ color: var(--background-button-color);
 
  .pages {
   display: block;
-padding-top: 32px;
-padding-bottom: 31px;
+
  Font-family: "Roboto";
 color: var(--bold-letters);
 font-weight: 500; 
@@ -237,11 +255,10 @@ color:var(--background-button-color)
    font-size: 16px;
    line-height: 1.1;
    letter-spacing: 0.03em;
-
+text-align:center;
    color: var(--p-color);
 
-   display: flex;
-  justify-content: center;
+   
  }
 
 .team-space:not(:last-child) {
@@ -260,15 +277,11 @@ padding-bottom: 25px;
  }
 
 .Web-footer {
-  display:flex;
-  margin-top: 60px;
-    padding-bottom: 2px;
-    font-family: "Raleway";
-    font-style: normal;
-    font-size: 26px;
+      font-family: "Raleway";
+       font-size: 26px;
     line-height: 1.19;
     color: var(--background-button-color);
-    margin-right: 90px;
+  
  }
 
  .why {
@@ -278,11 +291,10 @@ padding-bottom: 25px;
    font-size: 14px;
    line-height: 1.7;
       letter-spacing: 0.03em;
-   color: var(--p-color);
+   color: var(--twentyone);
  }
 
  .team-names {
-
 
    font-family: 'Roboto';
    font-style: normal;
@@ -290,12 +302,12 @@ padding-bottom: 25px;
    font-size: 16px;
    line-height: 1.1;
    letter-spacing: 0.03em;
+   margin-top: 30px;
 margin-bottom: 10px;
+text-align: center;
 
    color: var(--bold-letters);
 
-   display: flex;
-  justify-content: center;
  }
 
  .head-button {
@@ -308,11 +320,10 @@ margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    min-width: 200px;
+    padding: 10px, 32px;    
 
-    width: 200px;
-      height: 50px;
-     
-   border-radius: 4px;
+   border: none;
  }
 
 .head-button:hover,
@@ -335,7 +346,6 @@ margin-bottom: 10px;
      }
  .maps {
    font-family: 'Roboto';
-font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
@@ -353,13 +363,9 @@ color: var(--background-button-color);
  }
 
  .background-footer {
-  display: flex;
-      width: 1600px;
-      height: 252px;
       background-color: var(--footer-background);
-      margin-right: auto;
-      margin-left: auto;
- }
+      
+     }
 
  .studio {
   font-family: 'Raleway';
@@ -381,7 +387,6 @@ color: var(--background-button-color);
 
  .why-container {
   display: flex;
-  margin-bottom: -94px;
  }
 
 .doing-container {
@@ -419,7 +424,7 @@ font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 42;
   text-align: center;
   letter-spacing: 0.03em
  }
@@ -442,10 +447,19 @@ margin-right: 30px;
 }
 
 .footer-list {
-  display: flex;
-  padding-left: 5px;
-    flex-direction: column;
 }
+
+.nav-list-item {
+  padding-top: 6px ;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 
 .footer-list-item:not(:last-child) {
   margin-bottom: 9px;
@@ -454,12 +468,8 @@ margin-right: 30px;
 .nav-list {
   display:flex;
   justify-content: center;
-  margin-bottom: -60px;
-}
+ }
 
-.nav-list-item:not(:last-child) {
-  margin-right: 30px;
-}
 
 .images-list {
   display: flex;
@@ -475,4 +485,11 @@ margin-right: 30px;
   margin-left: 30px;
   margin-right: 30px;
   
+}
+
+
+.padding-names {
+  padding-bottom:50px;
+padding-top: 34px;
+border: 1px color var(--border);
 }
